@@ -19,5 +19,5 @@ public class EquipoDeTrabajo {
 	public int promedioEdad() {
 		int promedio = (int) this.integrantes.stream().mapToInt(Persona::edad).average().orElse(0);
 		return promedio;
-	}
+	} 
 }
