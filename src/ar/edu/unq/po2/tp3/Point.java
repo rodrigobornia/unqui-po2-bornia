@@ -27,5 +27,5 @@ public class Point {
 
 	public int y() {
 		return this.y;
-	}
+	}  
 }
