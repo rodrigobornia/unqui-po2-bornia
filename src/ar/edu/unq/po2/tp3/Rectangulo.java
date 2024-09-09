@@ -6,7 +6,7 @@ public class Rectangulo {
 	private Point verticeInferiorIzquierdo;
 	private Point verticeInferiorDerecho;
 	private Point verticeSuperiorIzquierdo;
-	private Point verticeSuperiorDerecho;
+	private Point verticeSuperiorDerecho; 
 
 	public Rectangulo(Point puntoOrigen, int ancho, int altura) {
 		this.verticeInferiorIzquierdo = puntoOrigen;
