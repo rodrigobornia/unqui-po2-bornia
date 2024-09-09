@@ -35,4 +35,4 @@ public class Rectangulo {
 		return this.ancho() > this.altura();
 	}
 
-}  
+}   
