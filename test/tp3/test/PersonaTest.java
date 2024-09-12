@@ -1,3 +1,4 @@
+package tp3.test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import ar.edu.unq.po2.tp3.Persona;
