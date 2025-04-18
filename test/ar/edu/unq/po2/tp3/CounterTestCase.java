@@ -44,4 +44,47 @@ import org.junit.jupiter.api.Test;
 	assertEquals(multiltipos, 1);
 	}
 	
+	@Test
+	public void testStringExpresionNueve() {
+		// Se obtiene el valor de ejecutar el metodo
+		boolean amount = counter.pruebaDeStringsNueve();
+		System.out.println("El valor es " + amount);
+		// Se verifica que el resultado es el esperado
+		assertEquals(true, amount);
+	}
+	@Test
+	public void testStringExpresionDiez() {
+		// Se obtiene el valor de ejecutar el metodo
+		boolean amount = counter.pruebaDeStringsDiez();
+		System.out.println("El valor es " + amount);
+		// Se verifica que el resultado es el esperado
+		assertEquals(true, amount);
+	}
+	
+	//Pruebas punto 5
+	@Test
+	public void testValorPredeterminadoInt() {
+		// Se obtiene el valor de ejecutar el metodo
+		int amount = counter.getX();
+		System.out.println("El valor es " + amount);
+		// Se verifica que el resultado es el esperado
+		assertEquals(0, amount);
+	}
+	@Test
+	public void testValorPredeterminadoInteger() {
+		// Se obtiene el valor de ejecutar el metodo
+		Integer amount = counter.getY();
+		System.out.println("El valor es " + amount);
+		// Se verifica que el resultado es el esperado
+		assertEquals(null, amount);
+	}
+	
+	@Test
+	public void testValorPredeterminadoIntDos() {
+		// Se obtiene el valor de ejecutar el metodo
+		Integer amount = counter.getX();
+		System.out.println("El valor es " + amount);
+		// Se verifica que el resultado es el esperado
+		assertEquals(0, amount);
+	}
 }
