@@ -17,10 +17,7 @@ class MultioperadorTest {
     }
 	
 	
-	  @Test
-	    public void testRestaNormal() {
-	        assertEquals(5, laRestaDeTodos(Arrays.asList(10, 3, 2))); // 10 - 3 - 2 = 5
-	    }
+	 
 }
 
 

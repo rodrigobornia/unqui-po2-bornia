@@ -27,6 +27,7 @@ class PointTest {
 	void createPointTest() {
 		assertEquals(2, v.getX());
 		assertEquals(4, v.getY());
+		
 	}
 	
 	

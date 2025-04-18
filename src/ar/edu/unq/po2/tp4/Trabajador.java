@@ -1,0 +1,39 @@
+package ar.edu.unq.po2.tp4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Trabajador {
+	//Variables de Instancia
+	
+		private int impuestoAlTrabajador = 2;
+		
+		private int montoImponible;
+		
+		private List<Ingreso> registroDeIngresos = new ArrayList<Ingreso>();
+		//Constructores
+		public Trabajador(int montoImponible) {
+			super();
+			this.montoImponible = montoImponible;
+		}
+		//Metodos
+			
+		public float getTotalPercibido() {
+			
+			Ingreso ultimoIngreso = registroDeIngresos.get(0);
+			
+			return ultimoIngreso.getMontoPercibido();
+		}
+		
+		public int getMontoImponible() {
+			return montoImponible;
+		}
+			
+		public float getImpuestoAPagar() {
+			return (this.getMontoImponible() * impuestoAlTrabajador) / 100;
+		}
+		
+		public void registrarIngreso(Ingreso ingreso) {
+			registroDeIngresos.add(ingreso);
+		}
+}
